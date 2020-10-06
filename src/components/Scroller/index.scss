@@ -1,0 +1,30 @@
+#container {
+    overflow: auto;
+    // 轨道的宽度和高度，具体是宽度还是高度取决于滚动条的方向
+    &::-webkit-scrollbar {
+        width: 16px;
+        height: 16px;
+    }
+    /* 定义滚动条渐增按扭的样式 */
+	&::-webkit-scrollbar-button:end:increment {
+	    background-image: url('../../../public/images/botarrow.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+	}
+	/* 定义滚动条渐减按扭的样式 */
+	&::-webkit-scrollbar-button:start:decrement {
+        background-image: url('../../../public/images/uparrow.png');
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+	}
+    &::-webkit-scrollbar-thumb {
+        background: #d8d8d8;
+        border-radius: 10px;
+    }
+    // 轨道的背景颜色
+    &::-webkit-scrollbar-track-piece {
+        background: transparent;
+    }
+}

@@ -1,0 +1,7 @@
+# .npmignore 
+build
+public
+src
+.babelrc
+.gitignore
+webpack.config.js
