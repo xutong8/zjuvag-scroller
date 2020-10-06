@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'production',
-    entry: './src/components/Scroller/index.jsx',
+    entry: './index.jsx',
     output: {
         filename: 'index.js',
         path: path.resolve(__dirname, 'build'),

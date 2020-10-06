@@ -1,5 +1,4 @@
 # .npmignore 
-build
 public
 src
 .babelrc
