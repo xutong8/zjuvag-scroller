@@ -1,4 +1,4 @@
-# ZJUVAG-Scroller
+# vagteam-scroller
 
 ![](https://img.shields.io/badge/npm-0.12-orange.svg) ![](https://img.shields.io/github/issues/crazylxr/3dtagcloudforeact.svg) ![](https://img.shields.io/github/forks/crazylxr/3dtagcloudforeact.svg) ![](https://img.shields.io/github/stars/crazylxr/3dtagcloudforeact.svg) ![](https://img.shields.io/github/license/crazylxr/3dtagcloudforeact.svg)
 
@@ -7,14 +7,14 @@
 ## Installation
 
 ```bash
-npm install zjuvag-scroller --save
+npm install vagteam-scroller --save
 ```
 
 ## Usage
 
 ```javascript
 import React from 'react'
-import Scroller from 'zjuvag-scroller'
+import Scroller from 'vagteam-scroller'
 
 class Demo extends React.Component {
   render() {
