@@ -4,9 +4,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     mode: 'production',
-    entry: './src/app.jsx',
+    entry: './src/components/Scroller/index.jsx',
     output: {
-        filename: 'built.js',
+        filename: 'index.js',
         path: path.resolve(__dirname, 'build'),
         publicPath: '/build/'
     },
@@ -65,9 +65,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: './src/index.html'
-        }),
+        // new HtmlWebpackPlugin({
+        //     template: './src/index.html'
+        // }),
         new MiniCssExtractPlugin({
             filename: 'css/bulit.css'
         })
