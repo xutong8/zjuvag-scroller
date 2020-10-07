@@ -1,6 +1,7 @@
 # .npmignore 
-public
+lib
 src
 .babelrc
 .gitignore
-webpack.config.js
+webpack.dev.js
+webpack.dev.js

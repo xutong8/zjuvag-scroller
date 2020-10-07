@@ -3,12 +3,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    mode: 'production',
-    entry: './index.jsx',
+    mode: 'development',
+    entry: './src/app.jsx',
     output: {
         filename: 'index.js',
-        path: path.resolve(__dirname, 'build'),
-        publicPath: '/build/'
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/dist/',
+        libraryExport: "default",
+        libraryTarget: "umd"
     },
     module: {
         rules: [
@@ -16,6 +18,13 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 use: "babel-loader",
                 exclude: /node_modules/
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
             },
             {
                 test: /\.scss$/,
@@ -65,9 +74,9 @@ module.exports = {
         ]
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //     template: './src/index.html'
-        // }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html'
+        }),
         new MiniCssExtractPlugin({
             filename: 'css/bulit.css'
         })
@@ -76,7 +85,7 @@ module.exports = {
         extensions: ['.js', '.jsx']
     },
     devServer: {
-        contentBase: path.resolve(__dirname, 'build'),
+        contentBase: path.resolve(__dirname, 'dist'),
         compress: true,
         port: 3000,
         open: true

@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Scroller from './components/Scroller';
+// import Scroller from './scroller';
+// import Scroller from '../lib/scroller/index';
+import Scroller from '../dist/index';
 
 const App = () => {
     return (

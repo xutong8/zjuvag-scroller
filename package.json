@@ -1,13 +1,12 @@
 {
-  "name": "v-scroller",
+  "name": "cad-scroller",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
-    "build": "webpack",
-    "compile": "npx babel src --out-dir lib"
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": "https://github.com/xutong8/zjuvag-scroller",
   "keywords": ["react", "scroller"],

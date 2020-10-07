@@ -1,0 +1,35 @@
+@charset "UTF-8";
+#container {
+  overflow: auto;
+  /* 定义滚动条渐增按扭的样式 */
+  /* 定义滚动条渐减按扭的样式 */
+}
+
+#container::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+#container::-webkit-scrollbar-button:end:increment {
+  background-image: url("../../public/images/botarrow.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#container::-webkit-scrollbar-button:start:decrement {
+  background-image: url("../../public/images/uparrow.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#container::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 10px;
+}
+
+#container::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+/*# sourceMappingURL=index.css.map */

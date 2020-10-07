@@ -7,14 +7,14 @@
     }
     /* 定义滚动条渐增按扭的样式 */
 	&::-webkit-scrollbar-button:end:increment {
-	    background-image: url('../../../public/images/botarrow.png');
+	    background-image: url('../../public/images/botarrow.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
 	}
 	/* 定义滚动条渐减按扭的样式 */
 	&::-webkit-scrollbar-button:start:decrement {
-        background-image: url('../../../public/images/uparrow.png');
+        background-image: url('../../public/images/uparrow.png');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
